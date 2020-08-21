@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 interface MessageProps {
@@ -6,6 +6,22 @@ interface MessageProps {
 }
 
 export const Message = ( { name }: MessageProps ) => {
+
+  const [coors, setCoors] = useState({ x:0, y:0 });
+  const { x, y } = coors;
+
+  useEffect(() => {
+
+    const mouseMove = (e: MouseEvent) => {
+      const coors = {x: e.x, y: e.y}
+      setCoors( coors );
+    }
+
+    window.addEventListener('mousemove', mouseMove);
+    return () => {
+      window.removeEventListener('mousemove', mouseMove);
+    }
+  }, [])
 
   useEffect(() => {
     // se ejecuta al montar el componente
@@ -20,6 +36,7 @@ export const Message = ( { name }: MessageProps ) => {
   return (
     <>
       <h3>{ name } Eres buenisimo!!</h3>
+      <p> X: { x }, Y: { y }</p>
     </>
   )
 }
