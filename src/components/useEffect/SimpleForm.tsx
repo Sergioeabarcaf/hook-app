@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Message } from './Message';
 import './SimpleForm.css';
 
 export const SimpleForm = () => {
@@ -12,17 +13,17 @@ export const SimpleForm = () => {
 
   // Se dispara solo una vez.
   useEffect(() => {
-    console.log('hola');
+    // console.log('hola');
   }, []);
 
   // Se dispara cada vez que cambia el formState.
   useEffect(() => {
-    console.log('formState');
+    // console.log('formState');
   }, [ formState ]);
 
   // Se dispara cada vez que cambia el email.
   useEffect(() => {
-    console.log('email');
+    // console.log('email');
   }, [ email ]);
 
   
@@ -59,6 +60,8 @@ export const SimpleForm = () => {
           onChange={ handleInputChange }
         />
       </div>
+
+      { name==='juan' && < Message name={ name }/>}
     </>
   )
 }
