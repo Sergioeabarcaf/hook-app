@@ -4,11 +4,12 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 // import { HookApp } from './HookApp';
 // import { CounterApp } from './components/useState/CounterApp';
-import { CounterWIthCustomHook } from './components/useState/CounterWIthCustomHook';
+// import { CounterWIthCustomHook } from './components/useState/CounterWIthCustomHook';
+import { SimpleForm } from './components/useEffect/SimpleForm';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CounterWIthCustomHook />
+    <SimpleForm />
   </React.StrictMode>,
   document.getElementById('root')
 );
