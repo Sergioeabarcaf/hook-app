@@ -5,11 +5,12 @@ import * as serviceWorker from './serviceWorker';
 // import { HookApp } from './HookApp';
 // import { CounterApp } from './components/useState/CounterApp';
 // import { CounterWIthCustomHook } from './components/useState/CounterWIthCustomHook';
-import { SimpleForm } from './components/useEffect/SimpleForm';
+// import { SimpleForm } from './components/useEffect/SimpleForm';
+import { FormWithCursomHook } from './components/useEffect/FormWithCursomHook';
 
 ReactDOM.render(
   <React.StrictMode>
-    <SimpleForm />
+    <FormWithCursomHook />
   </React.StrictMode>,
   document.getElementById('root')
 );
