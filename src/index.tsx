@@ -8,11 +8,12 @@ import * as serviceWorker from './serviceWorker';
 // import { SimpleForm } from './components/useEffect/SimpleForm';
 // import { FormWithCursomHook } from './components/useEffect/FormWithCursomHook';
 // import { MultipleCustomHook } from './components/examples/MultipleCustomHook';
-import { FocusScreen } from './components/useRef/FocusScreen';
+// import { FocusScreen } from './components/useRef/FocusScreen';
+import { ExampleRealRef } from './components/useRef/ExampleRealRef';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FocusScreen />
+    <ExampleRealRef />
   </React.StrictMode>,
   document.getElementById('root')
 );
