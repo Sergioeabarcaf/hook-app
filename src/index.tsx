@@ -9,11 +9,12 @@ import * as serviceWorker from './serviceWorker';
 // import { FormWithCursomHook } from './components/useEffect/FormWithCursomHook';
 // import { MultipleCustomHook } from './components/examples/MultipleCustomHook';
 // import { FocusScreen } from './components/useRef/FocusScreen';
-import { ExampleRealRef } from './components/useRef/ExampleRealRef';
+// import { ExampleRealRef } from './components/useRef/ExampleRealRef';
+import { LayoutEffect } from './components/useLayoutEffect/LayoutEffect';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ExampleRealRef />
+    <LayoutEffect />
   </React.StrictMode>,
   document.getElementById('root')
 );
