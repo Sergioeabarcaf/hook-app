@@ -6,11 +6,12 @@ import * as serviceWorker from './serviceWorker';
 // import { CounterApp } from './components/useState/CounterApp';
 // import { CounterWIthCustomHook } from './components/useState/CounterWIthCustomHook';
 // import { SimpleForm } from './components/useEffect/SimpleForm';
-import { FormWithCursomHook } from './components/useEffect/FormWithCursomHook';
+// import { FormWithCursomHook } from './components/useEffect/FormWithCursomHook';
+import { MultipleCustomHook } from './components/examples/MultipleCustomHook';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormWithCursomHook />
+    <MultipleCustomHook />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -23,7 +23,7 @@ export const FormWithCursomHook = () => {
   
   return (
     <form onSubmit={ handleSubmit }>
-      <h1>FormWithCursomHook</h1>
+      <h1>FormWithCustomHook</h1>
       <hr/>
       <div className='form-group'>
         <input 
