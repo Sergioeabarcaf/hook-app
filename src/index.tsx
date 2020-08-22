@@ -7,11 +7,12 @@ import * as serviceWorker from './serviceWorker';
 // import { CounterWIthCustomHook } from './components/useState/CounterWIthCustomHook';
 // import { SimpleForm } from './components/useEffect/SimpleForm';
 // import { FormWithCursomHook } from './components/useEffect/FormWithCursomHook';
-import { MultipleCustomHook } from './components/examples/MultipleCustomHook';
+// import { MultipleCustomHook } from './components/examples/MultipleCustomHook';
+import { FocusScreen } from './components/useRef/FocusScreen';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MultipleCustomHook />
+    <FocusScreen />
   </React.StrictMode>,
   document.getElementById('root')
 );
