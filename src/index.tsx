@@ -11,10 +11,11 @@ import * as serviceWorker from './serviceWorker';
 // import { FocusScreen } from './components/useRef/FocusScreen';
 // import { ExampleRealRef } from './components/useRef/ExampleRealRef';
 import { LayoutEffect } from './components/useLayoutEffect/LayoutEffect';
+import { Memorize } from './components/memos/Memorize';
 
 ReactDOM.render(
   <React.StrictMode>
-    <LayoutEffect />
+    <Memorize />
   </React.StrictMode>,
   document.getElementById('root')
 );
