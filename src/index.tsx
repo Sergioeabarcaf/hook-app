@@ -10,12 +10,13 @@ import * as serviceWorker from './serviceWorker';
 // import { MultipleCustomHook } from './components/examples/MultipleCustomHook';
 // import { FocusScreen } from './components/useRef/FocusScreen';
 // import { ExampleRealRef } from './components/useRef/ExampleRealRef';
-import { LayoutEffect } from './components/useLayoutEffect/LayoutEffect';
-import { Memorize } from './components/memos/Memorize';
+// import { LayoutEffect } from './components/useLayoutEffect/LayoutEffect';
+// import { Memorize } from './components/memos/Memorize';
+import { MemoHook } from './components/memos/MemoHook';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Memorize />
+    <MemoHook />
   </React.StrictMode>,
   document.getElementById('root')
 );
