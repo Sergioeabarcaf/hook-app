@@ -12,11 +12,12 @@ import * as serviceWorker from './serviceWorker';
 // import { ExampleRealRef } from './components/useRef/ExampleRealRef';
 // import { LayoutEffect } from './components/useLayoutEffect/LayoutEffect';
 // import { Memorize } from './components/memos/Memorize';
-import { MemoHook } from './components/memos/MemoHook';
+// import { MemoHook } from './components/memos/MemoHook';
+import { CallbackHook } from './components/memos/CallbackHook';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MemoHook />
+    <CallbackHook />
   </React.StrictMode>,
   document.getElementById('root')
 );
