@@ -14,11 +14,12 @@ import * as serviceWorker from './serviceWorker';
 // import { Memorize } from './components/memos/Memorize';
 // import { MemoHook } from './components/memos/MemoHook';
 // import { CallbackHook } from './components/memos/CallbackHook';
-import { Padre } from './components/tareaMemo/Padre';
+// import { Padre } from './components/tareaMemo/Padre';
+import { TodoAPP } from './components/useReducer/TodoAPP';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Padre />
+    <TodoAPP />
   </React.StrictMode>,
   document.getElementById('root')
 );
