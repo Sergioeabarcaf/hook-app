@@ -28,6 +28,15 @@ export const TodoAPP = () => {
 
   }
 
+  const handleToggle = ( id: number ) => {
+    const action = {
+      type: 'toggle',
+      payload: { id }
+    }
+
+    dispatch( action );
+  }
+
   const handleSubmit = ( e: React.FormEvent<HTMLFormElement> ) => {
     e.preventDefault();
 
@@ -59,7 +68,12 @@ export const TodoAPP = () => {
             {
               todos.map( ( todo, i ) => (
                 <li key={ todo.id } className='list-group-item'>
-                  <p className='text-center'>{ i + 1 }. { todo.desc }</p>
+                  <p
+                    className={ `${todo.done && 'complete'}` } 
+                    onClick={ e => handleToggle( todo.id ) }
+                  >
+                    { i + 1 }. { todo.desc }
+                  </p>
                   <button 
                     className='btn btn-danger'
                     onClick={ e => handleDelete( todo.id ) }
