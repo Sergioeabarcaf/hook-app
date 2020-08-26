@@ -1,16 +1,6 @@
+import { Action, Todo } from './models';
 
-interface Payload {
-  id: number
-  desc?: string
-  done?: boolean
-}
-
-interface Action {
-  type: string
-  payload: Payload
-}
-
-export const todoReducer = ( state: Payload[], action: Action ) => {
+export const todoReducer = ( state: Todo[], action: Action ) => {
   
   switch ( action.type ) {
     case 'add':

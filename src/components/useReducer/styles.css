@@ -7,12 +7,14 @@ p {
     margin: 0px;
 }
 
+.complete {
+    text-decoration: line-through;
+}
+
 .list-group-item {
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
 
-.complete {
-    text-decoration: line-through;
-}
+
