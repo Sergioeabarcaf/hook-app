@@ -7,6 +7,7 @@ This repo contains examples of use for differents Hooks. The Hooks seen are:
 * useLayoutEffect
 * useMemo
 * useCallback
+* useReducer
 
 And, create custom hooks: 
 * useCounter
